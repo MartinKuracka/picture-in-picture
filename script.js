@@ -19,7 +19,7 @@ async function selectStreamToDisplay() {
 //  event listener to button press
 button.addEventListener('click',() => {
     window.innerWidth < 600 
-        ? infoText.innerHTML ='Sorry, this feature works only on desktop devices'
+        ? infoText.innerHTML ='Sorry, this feature works only on desktop PC'
         : (infoText.innerHTML = 'Works in Chrome and Edge browsers only', selectStreamToDisplay());
 })
 
