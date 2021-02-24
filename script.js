@@ -3,7 +3,7 @@ const button = document.getElementById('button');
 
 // Prompt to select media stream, pass to media element and play
 async function selectStreamToDisplay() {
-    try {        
+    try {
         const mediaStream = await navigator.mediaDevices.getDisplayMedia();
         videoElement.srcObject = mediaStream;
         videoElement.onloadedmetadata = () => {
@@ -18,7 +18,7 @@ async function selectStreamToDisplay() {
 //  event listener to button press
 button.addEventListener('click',() => {
     selectStreamToDisplay();
-    
+
 } )
 // On load
 // selectStreamToDisplay();

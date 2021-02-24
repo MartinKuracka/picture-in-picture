@@ -46,3 +46,15 @@ button:active {
   outline:none;
   border-style: outset;
 }
+
+/* media querries */
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+  .button-container button {
+    font-size: 30px;
+  }
+}
