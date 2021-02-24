@@ -9,6 +9,11 @@ p {
   margin: 10vh auto;
 }
 
+span {
+  font-weight: 600 ;
+  font-style: italic;
+}
+
 body {
   margin: 0;
   height: 100vh;
