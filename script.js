@@ -1,5 +1,6 @@
 const videoElement = document.getElementById('video');
 const button = document.getElementById('button');
+const infoText = document.getElementById('info-text');
 
 // Prompt to select media stream, pass to media element and play
 async function selectStreamToDisplay() {
@@ -17,7 +18,9 @@ async function selectStreamToDisplay() {
 
 //  event listener to button press
 button.addEventListener('click',() => {
-    selectStreamToDisplay();
+    window.innerWidth < 600 
+        ? infoText.innerHTML ='Sorry, this feature works only on desktop devices'
+        : (infoText.innerHTML = 'Works in Chrome and Edge browsers only', selectStreamToDisplay());
 
 } )
 // On load
